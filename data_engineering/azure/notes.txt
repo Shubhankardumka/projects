@@ -1,2 +1,64 @@
 ------------- Notes for Data Engineering on the Azure Platform DP - 203 
 
+Setting up the Azure CLI:
+
+    Azure CLoud Shell requires Azure File Share to Persist Files. This incurrs a cost
+    Use commands using the AZ command
+
+    Install the Azure CLI on your local machine using the following link:
+        https://portal.azure.com/#view/Microsoft_Azure_GTM/ModernBillingMenuBlade/~/BillingAccounts
+        Download the MSI File. MSI stands for microsoft installable
+
+    To validate if azure CLI is successfully set up on windows, run the following command in your powershell:
+    az version
+
+    Next Step-> Link Local CLI Account with Azure Cloud Account
+        Run the command az login, this will redirect you to an Oauth Page associated with your Azure Account
+        To logout, use the command, az logout
+
+Resource Groups-> 
+    Groups Similar resources into a unit
+    Create a resource group first and then add resources to it
+
+What is a storage account?
+    An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, and tables.The storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS.
+
+What are Azure blobs? A blob is a binary, large object and a storage option for any type of data that you want to store in a binary format
+
+    Azure Blob Storage: It is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing a massive amount of unstructured data, such as text or binary data.
+
+    Blob storage usages:
+
+        It serves images or documents directly to a browser.
+        It stores files for distributed access.
+        We can stream video and audio using blob storage.
+        Easy writing to log files.
+        It stores the data for backup, restore, disaster recovery, and archiving.
+        It stores the data for analysis by an on-premises or Azure-hosted service.
+        Azure blob storage is fundamental for the entire Microsoft Azure because many other Azure services will store the data within a storage account, inside the blob storage, and act upon that data. And every blob should be stored in a container.
+
+    The container is more like a folder where different blobs are stored. 
+
+    Blob Types:
+    Azure offers three types of blob service:
+
+        Block blob: 
+            It stores text binary data up-to about 4.7 TB. It is the block of data that can be managed individually. We can use block blobs mainly to improve the upload-time when we are uploading the blob data into Azure. When we upload any video files, media files, or any documents. We can generally use block blobs unless they are log files.
+
+        Append blob:
+            It is made up of blocks like block blobs, but are optimized for append operations. It is ideal for an application like logging data from virtual machines. For example - application log, event log where you need to append the data to the end of the file. So when we are uploading a blob into a container using the Azure portal or using code, we can specify the blob type at that time.
+
+        Page blob: 
+            It stores random access files up-to 8 TB. Page blobs store the VHD files that backs VMs.
+
+TLS-> Transport Layer Security
+
+
+WHAT IS A QUEUE?
+    Here is the classic definition of a queue - It’s a data structure working on the First-In-First-Out (FIFO) principle.
+
+    Azure Queue Storage is a service for storing large numbers of messages. You access messages from anywhere in the world via authenticated calls using HTTP or HTTPS. A queue message can be up to 64 KB in size. A queue may contain millions of messages, up to the total capacity limit of a storage account.
+
+What is a file share?
+
+    An Azure file share is a convenient place for cloud applications to write their logs, metrics, and crash dumps.
