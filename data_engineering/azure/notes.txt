@@ -62,3 +62,28 @@ WHAT IS A QUEUE?
 What is a file share?
 
     An Azure file share is a convenient place for cloud applications to write their logs, metrics, and crash dumps.
+
+
+-------------------------
+
+
+Blobs:
+
+    Create a container to store data in a blob in a storage account
+    
+    Limitations of Uploading data in a container:
+        You can only upload one file at a time. 
+
+    To overcome this limit use Azure Storage Explorer:
+         Azure storage explorer authenticates with your azure account and you can then upload all files to your storage container
+
+ADLS: Azure Data Lake Storage
+    Create a Storage Container First
+    ADLS is needed if you want to get external tables into Synapse, this is very important
+
+    If you’re looking to use your storage account for data analytics and big data storage, you should consider upgrading to Azure Data Lake Storage Gen2, which will enable hierarchical namespace on the account
+
+    A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale. 
+
+ADF: Azure Data Factory
+
