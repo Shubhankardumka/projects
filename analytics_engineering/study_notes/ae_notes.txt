@@ -27,7 +27,13 @@ Databases:
             OLTP
                 Online Transactional Processing databases are commonly used where CRUD operations are frequent. Examples include banking, retail etc.
                 Data is structured. 
-                Highly Normalized Data -> There are relationships between tables. Normalization means splitting a big table into multiple smaller tables to remove data duplication issues.  
+                Highly Normalized Data -> There are relationships between tables. Normalization means splitting a big table into multiple smaller tables to remove data duplication issues. 
+                Since tables are usually normalized, in order to retreive data for analytics complex queries need to be written. 
+                Schemas and schematic diagrams are predefined, before tables are populated. 
+                Optimized for data collection, not analytics
+
+                OLTP ACID?
+                    ACID stands for Atomicity, Consistency, Integrity and Durability.  
 
         NO SQL:
             Key Value : JSON (Exampple)
