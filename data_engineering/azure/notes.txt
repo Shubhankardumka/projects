@@ -84,6 +84,22 @@ ADLS: Azure Data Lake Storage
     If you’re looking to use your storage account for data analytics and big data storage, you should consider upgrading to Azure Data Lake Storage Gen2, which will enable hierarchical namespace on the account
 
     A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale. 
+    
+Difference between data warehouse and data lake-> Data Lake can store both structured (Tables) and Unstructred Data (Files, text, images). Data Warehouses can only store tables
 
 ADF: Azure Data Factory
 
+    What is the difference between SSIS and Azure Data Factory?
+    An ETL tool extracts, transforms, and loads data. SQL Server Integration Service (SSIS) is an on-premises ETL technology intended for use in on-premises applications. Azure Data Factory is a data pipeline orchestrator based in the cloud 
+
+    ADF allows you to ingest data, create data pipelines and schedule them. 
+
+    There are four factory resources-> Datasets, Power Query, Pipelines and Dataflows
+
+    Datasets consist of source and destination tables.
+    Power Query is used for AdHoc Analysis. 
+    Data flows and pipelines are used to ETL data. 
+
+    Steps to create a pipeline:
+
+        1) Create a Linked Service
