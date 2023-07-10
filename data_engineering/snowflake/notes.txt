@@ -7,4 +7,12 @@ Roles:
     Sys Admin -> Create warehouses and databases.
     Public -> Role where explicit access control is not needed. 
 
+What is the difference between a table and a view?
+    A table contains data, a view is just a SELECT statement which has been saved in the database (more or less, depending on your database).
 
+
+Snowflake Architecture:
+    Snowflake consists of three layers:
+        Database Storage -> Hybrid Columnar Storage
+        Query Processing -> Virtual Warehouses (The Backbone of Snowflake), Performs Parallel Processing, Can be scaled according to needs. Also known as the compute engine.
+        Cloud services -> Security, Metadata Manager
