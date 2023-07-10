@@ -1,0 +1,47 @@
+Databases:
+
+    What is a database?
+        A place where collection of data is stored. Databases could be relational and non relational.
+
+    A database is managed by a database management system. 
+
+    Data is stored in rows and columns. 
+
+    What is a DBMS? 
+        It is a software used to store, retrieve, define and manage data. 
+        
+        Popular DBMS->
+            Microsoft SQL Server
+            MySQL
+            Oracle Database
+            PostGreSQL
+            MariaDb
+            Amazon RDS
+            Google Cloud SQL
+        
+        Amazon RDS and Google Cloud SQL are cloud based databases. 
+
+    Different Types of Databases:
+        SQL:
+            OLAP
+            OLTP
+                Online Transactional Processing databases are commonly used where CRUD operations are frequent. Examples include banking, retail etc.
+                Data is structured. 
+                Highly Normalized Data -> There are relationships between tables. Normalization means splitting a big table into multiple smaller tables to remove data duplication issues.  
+
+        NO SQL:
+            Key Value : JSON (Exampple)
+            Graph Database: Neo4J
+
+
+SQL->(SEQUEL)
+    It is a language used to interact with a database. 
+    Most modern databases use ANSI standards for SQL. ANSI stands for American National Standards Institute.
+    SQL example:
+        select * from customers. This line will retrieve all data in the customers table. 
+
+Spreadsheet vs Database?
+
+    Limited Number of rows and columns in a Spreadsheet
+    A spreadsheet loads all of the data. A database will only load data given by an SQL Query. 
+
