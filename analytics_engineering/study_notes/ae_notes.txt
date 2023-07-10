@@ -33,7 +33,13 @@ Databases:
                 Optimized for data collection, not analytics
 
                 OLTP ACID?
-                    ACID stands for Atomicity, Consistency, Integrity and Durability.  
+                    ACID stands for Atomicity, Consistency, Isolation and Durability.  
+                    MySQL is not Acid Compliant, however its engine INNO Db is. 
+
+                    Atomicity-> Transaction either happens or not. 
+                    Consistency-> Data is consistent before and after the transaction.
+                    Isolation-> Multiple transactions happen without affecting one another and parallely. 
+                    Durability-> Transactions are not vulnerable to system failures. Once a transaction is stored, it is stored. 
 
         NO SQL:
             Key Value : JSON (Exampple)
