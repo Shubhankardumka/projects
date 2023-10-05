@@ -1,0 +1,57 @@
+What is a database? 
+    It stores and organises data.
+
+How does it store data? What is a table?
+    In the form of a table. As rows and columns. A table stores related data. 
+
+What are primary keys?
+    Primary Keys keep everything unique. 
+
+What are foreign keys?
+    References a primary key in another table. 
+
+What is a surrogate primary key?
+    When you don't have a primary key, made up of different columns. Could be a combination of these columnns.
+
+What is a tuple? 
+    It is another name for a row. 
+
+What is an attribute?
+    Another name for a single cell. 
+
+What is a field?
+    Another name for a cell. 
+
+What is atomicity?
+    An atomic attribute is an attribute that is not further breakable. Like first name. A combination of first name and last name in a column is non atomic. 
+
+What is normalization?
+    Breaking a table into multiple tables to remove redundancies. There can be multiple normal forms, 1, 2 ,3 ,4 etc. 
+
+ERD?
+
+    Entitiy relationship diagrams. These are diagrams representing the relationships between different tables. 
+
+RDMS?
+
+    Relational database management systems. A relation is another word for a table. 
+
+Notes on primary keys:
+    A primary key has to be unique. It cannot be null. Values of a primary key musn't change. A person always has a unique SSN, for example. They don't go about changing their SSNs everyday. 
+
+Foreign Keys:
+
+    A key used as a reference to another table. A primary key in one table could be a foreign key in another table. For example if one table consits of users, and another table posts, user id could be a primary key used to fetch post details from the posts table via its user id foreign key. 
+
+Relationships?
+
+    There are three types of relationships one to one, one to many, many to many. 
+
+    One to one -> Two people cannot have the same social security number. A will always be A and B will always be B.
+
+    One to many -> A teacher can teach multiple disciplines, but each discipline has one teacher. 
+
+    many to many -> Authors, two authors could have written two books. 
+
+
+

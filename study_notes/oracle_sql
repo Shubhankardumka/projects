@@ -1,0 +1,13 @@
+Downloads:
+
+    Oracle Database 
+    Oracle SQL Developer
+
+New Connection Credentials in Oracle SQL Developer:
+
+    username: sys
+    password: -
+    hostname: localhost
+    port: 1521
+    service name: XEPDB1
+    
